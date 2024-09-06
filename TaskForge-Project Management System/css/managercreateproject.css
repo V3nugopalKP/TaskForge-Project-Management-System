@@ -1,0 +1,138 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fceae8;
+    color: #ff6347;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    color: #ff6347;
+    border-radius: 10px;
+    border: 1px solid #ff6347;
+    box-shadow: 0 4px 6px #ff6347;
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 48%;
+    min-width: 200px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ff6347;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff6347;
+    background-color: #fceae8;
+    color: #ff6347;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px; /* Consistent height for all input elements */
+}
+
+textarea {
+    height: 40px; /* Ensuring the text area height is consistent */
+    resize: vertical; /* Allow vertical resize if necessary */
+}
+
+select {
+    height: 40px; /* Ensuring select height is consistent */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.submit_class {
+    background-color: #ff6347;
+    color: #fceae8;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.submit_class:hover {
+    background-color: #754c06;
+}
+
+.add-task-button {
+    background-color: #ff6347;
+    color: #fceae8;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.add-task-button:hover {
+    background-color: #0056b3;
+}
+
+#tasks {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+#tasks li {
+    background-color: #fceae8;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff6347;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    width: 250px;
+    height: auto;
+    /* Ensure the logo is above other content */
+}

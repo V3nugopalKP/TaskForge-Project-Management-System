@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Task Details</title>
+    <link rel="stylesheet" href="../css/devtaskdetails.css">
+</head>
+<body>
+    <a href="../html/developermain.html" onclick="goBack()">
+        <img src="../image/TF.png" alt="Back" class="back-button">
+    </a>
+    <div class="header">
+        <h1>Welcome, <span id="username"></span>!</h1>
+        <button id="signOutButton">Sign Out</button>
+    </div>
+    
+    <div class="content">
+        <h2>Your Tasks</h2>
+        <div id="taskList">
+            <!-- Tasks will be dynamically added here -->
+        </div>
+    </div>
+
+    <script type="module" src="../javascript/devtaskdetails.js" defer></script>
+</body>
+</html>

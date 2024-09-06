@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fceae8;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* To ensure content does not overflow */
+}
+
+.sidebar {
+  width: 30%;
+  padding: 20px;
+  background-color: #f7f7f7; /* Subtle background color for sidebar */
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.chat-header {
+  padding: 20px;
+  background-color: #ff6347;
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid #ddd; /* Subtle border for separation */
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fafafa; /* Light background for chat area */
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+  background-color: #f7f7f7; /* Matching background with sidebar */
+  padding: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6347;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.chat-input button:hover {
+  background-color: #ff4c2c;
+}
+
+.sidebar h2, .chat-header h2 {
+  margin: 0;
+  padding-bottom: 10px; /* Add some padding for better spacing */
+  border-bottom: 1px solid #ddd; /* Subtle border for separation */
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#userList {
+  list-style-type: none;
+  padding: 0;
+  flex: 1; /* Ensure it takes remaining space */
+  overflow-y: auto; /* Add scrolling if needed */
+}
+
+#userList li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+#userList li:hover {
+  background-color: #f0f0f0;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  max-width: 70%; /* Limit message width for better readability */
+}
+
+.message.sent {
+  background-color: #4CAF50;
+  color: white;
+  align-self: flex-end;
+}
+
+.message.received {
+  background-color: #ddd;
+  align-self: flex-start;
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  width: 250px;
+  height: auto;
+  /* Ensure the logo is above other content */
+}

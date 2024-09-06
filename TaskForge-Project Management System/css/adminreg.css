@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fceae8;
+    color: #ff6347;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fddbd7;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+form {
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fceae8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ff6347;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 15px;
+    margin: 10px 0;
+    width: calc(100% - 30px);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ff6347;
+    border-color: #ff6347;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+input[type="submit"],
+.submit_class {
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff6347;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover,
+.submit_class:hover {
+    background-color: #fddbd7;
+    transform: translateY(-2px);
+}
+
+.submit_class {
+    background-color: #ff6347;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.submit_class:hover {
+    background-color: #ff4c2c; /* Darker coral on hover */
+    transform: translateY(-2px); /* Move up on hover */
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+}

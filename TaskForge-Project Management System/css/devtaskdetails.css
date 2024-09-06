@@ -1,0 +1,57 @@
+/* Styles for header and sign out button */
+.header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Task list styles */
+.task-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.task-card h3 {
+    margin-top: 0;
+}
+
+.task-card p {
+    margin: 5px 0;
+}
+
+#signOutButton {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#signOutButton:hover {
+    background-color: #c82333;
+}
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}

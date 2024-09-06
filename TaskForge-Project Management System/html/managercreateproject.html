@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Project</title>
+    <link rel="stylesheet" href="../css/managercreateproject.css">
+</head>
+<body>
+    <a href="../html/managermain.html">
+        <img src="../image/TF.png" alt="Back" class="back-button">
+    </a>
+    <div class="container">
+        <h2>Create Project</h2>
+        <form id="projectForm">
+            <div class="form-row">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            
+            <div class="form-row">
+                <label for="description">Title Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            
+            <div class="form-row">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+            </div>
+
+            <div class="form-row">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" required>
+            </div>
+            
+            <div class="form-row">
+                <label for="languages">Languages Used:</label>
+                <input type="text" id="languages" name="languages" required>
+            </div>
+            
+            <div class="form-row">
+                <label for="manager">Select Manager:</label>
+                <select id="manager" name="manager" required>
+                    <!-- Options will be populated from database -->
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="developer">Select Developers:</label>
+                <select id="developer" name="developer" multiple required>
+                    <!-- Options will be populated from database -->
+                </select>
+            </div>
+            
+            <div class="form-row">
+                <label for="task">Assign Task to Developers:</label>
+                <input type="text" id="task" name="task">
+            </div>
+            
+            <div class="form-row">
+                <label for="taskStartDate">Task Start Date:</label>
+                <input type="date" id="taskStartDate" name="taskStartDate">
+            </div>
+
+            <div class="form-row">
+                <label for="taskEndDate">Task End Date:</label>
+                <input type="date" id="taskEndDate" name="taskEndDate">
+            </div>
+
+            <div class="form-row">
+                <button type="button" id="addTaskButton" class="add-task-button">Add Task</button>
+            </div>
+            
+            <div class="form-row">
+                <label for="tasks">Tasks:</label>
+                <ul id="tasks">
+                    <!-- Task list will be appended here -->
+                </ul>
+            </div>
+            
+            <div class="form-row">
+                <button type="submit" class="submit_class">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="../javascript/firebaseInt.js" defer></script>
+    <script type="module" src="../javascript/managercreateproject.js" defer></script>
+</body>
+</html>

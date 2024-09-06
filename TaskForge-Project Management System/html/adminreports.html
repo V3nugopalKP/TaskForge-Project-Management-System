@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Reports</title>
+    <link rel="stylesheet" href="../css/adminreports.css">
+</head>
+<body>
+    <a href="../html/Adminmain.html" onclick="goBack()">
+        <img src="../image/TF.png" alt="Back" class="back-button">
+    </a>
+    <div class="container">
+        <header>
+            <h1>User Reports and Analytics</h1>
+            
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Created at</th>
+                    <th>Last Signed in</th>
+
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                <!-- User data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../javascript/adminreports.js" type="module"></script>
+</body>
+</html>

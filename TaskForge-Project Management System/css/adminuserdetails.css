@@ -1,0 +1,102 @@
+body {
+  background-color: #fceae8; /* Changed background color to dark gray */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  color: #f5f5f5; /* Changed text color to a light gray for better contrast */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #ff6347; /* Tomato color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px; /* Space between user lists */
+}
+
+.user-list {
+  background-color: #fddbd7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 45%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-list:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.user-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff6347;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ff6347;
+  padding: 15px 0;
+  transition: background-color 0.3s ease;
+}
+
+.user-card:hover {
+  background-color: rgba(255, 99, 71, 0.1); /* Light tomato hover effect */
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #ff6347;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #ff3333;
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+.back-button { /* for taskforge symbol */
+  position: fixed;
+  top: 20px; /* Adjust top position as needed */
+  left: 20px; /* Adjust left position as needed */
+  z-index: 999; /* Ensure the logo is above other content */
+  width: 250px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-button:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for effect */
+}

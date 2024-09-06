@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Application</title>
+  <link rel="stylesheet" href="../css/chatapplication.css">
+</head>
+<body>
+  <a href="../html/adminmain.html" onclick="goBack()">
+    <img src="../image/TF.png" alt="Back" class="back-button">
+  </a>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Search Users</h2>
+      <input type="text" id="searchInput" placeholder="Enter email or username">
+      <ul id="userList"></ul>
+    </div>
+    <div class="chat">
+      <div class="chat-header">
+        <h2 id="chatWith">Chat with: </h2>
+      </div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button id="sendButton">Send</button>
+      </div>
+    </div>
+  </div>
+  
+  <script type="module" src="../javascript/chatapplication.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Use Roboto as the primary font */
+    margin: 0;
+    padding: 0;
+    background-color: #fceae8; /* Very light coral background color */
+    color: #333; /* Darker text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.typing-animation {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier', monospace; /* Changed to Courier font */
+    font-size: 5em; /* Increased font size for typing animation */
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: .15em solid #ff6347; /* Coral color for typing animation */
+    animation: typing 3s steps(18, end), blink-caret .75s step-end infinite;
+}
+
+.login-option {
+    font-family: 'Roboto', Arial, sans-serif; /* Use Roboto for consistency */
+    background-color: #fff; /* White background */
+    padding: 70px; /* Increased padding for larger boxes */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    flex: 1; /* Equal width distribution */
+    position: relative;
+    overflow: hidden;
+}
+
+.login-option:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffb347, #ff8c47); /* Updated gradient background */
+    z-index: -1;
+    transition: transform 0.3s ease-out;
+    transform: skew(-15deg); /* Skew effect */
+}
+
+.login-option:hover:before {
+    transform: skew(0); /* Reverse skew on hover */
+}
+
+.login-option:hover {
+    transform: translateY(-5px); /* Lift the option on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.login-button {
+    font-family: 'Roboto', Arial, sans-serif; /* Use Roboto for consistency */
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff6347; /* Coral color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: #ff4c2c; /* Darker coral on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.login-button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent overlay */
+    z-index: -1;
+    border-radius: 25px; /* Match button's border-radius */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.login-button:hover::before {
+    opacity: 1; /* Fade in on hover */
+}
+
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Animation keyframes */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}

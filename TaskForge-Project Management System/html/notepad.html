@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Main</title>
+    <link rel="stylesheet" href="../css/notepad.css">
+</head>
+<body>
+    <a href="../html/developermain.html" onclick="goBack()">
+        <img src="../image/TF.png" alt="Back" class="back-button">
+      </a>
+    <div class="container">
+        <!-- Add user-specific content here -->
+        <h1>Welcome, <span id="username"></span>!</h1>
+        <p>Here you can manage your notepads.</p>
+        <div class="notepad-container">
+            <div class="notepad-header">
+                <input type="date" id="notepadDate" />
+                <button class="login-button" id="addNotepadButton">Add Notepad</button>
+            </div>
+            <div id="notepads"></div>
+        </div>
+    </div>
+    <script src="../javascript/notepad.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manager Main Page</title>
+  <link rel="stylesheet" href="../css/managermain.css">
+</head>
+<body>
+  <div id="clock"></div>
+  <h1>Welcome, <span id="username">username</span>, to Manager Panel</h1>
+
+  <button class="toggle-button" id="toggleButton">Menu →</button>
+  <button class="user-button" id="userButton">
+    <img src="../image/user-inverted.png" alt="user-inverted" style="width: 20px; height: 20px;">
+    <span id="usernameText">username</span>
+  </button>
+  
+  <div class="slide-in-menu" id="slideInMenu">
+    <button class="register-button" id="registerButton">Create Project</button>
+    <button class="edit-button" id="editButton">Edit Project</button>
+    <button class="mail-button" id="mailButton">
+      <img src="../image/image.png" alt="gmail" style="width: 15px; height: 10px;">
+      Send Mail
+    </button>
+    <button class="chat-button" id="chatButton">Chat</button>
+    <button class="git-button" id="gitButton">Github</button>
+    <button class="meet-button" id="meetButton">G-Meet</button>
+    <button class="sign-out-button" id="signOutButton">Sign Out</button>
+  </div>
+  
+  <div class="project-count-box">
+    <h2>Total Projects: <span id="projectCount">0</span></h2>
+  </div>
+
+  <!-- Project Details Modal -->
+  <div id="projectDetailsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" id="closeProjectModal">&times;</span>
+      <h2>Project Details</h2>
+      <div id="projectDetails"></div>
+    </div>
+  </div>
+
+  <!-- User Details Modal -->
+  <div id="userModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" id="closeModalButton">&times;</span>
+      <h2>User Profile</h2>
+      <p><strong>Name:</strong> <span id="modalName"></span></p>
+      <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+      <p><strong>Role:</strong> <span id="modalRole"></span></p>
+    </div>
+  </div>
+
+  <script type="module" src="../javascript/firebaseInt.js" defer></script>
+  <script type="module" src="../javascript/managermain.js" defer></script>
+</body>
+</html>

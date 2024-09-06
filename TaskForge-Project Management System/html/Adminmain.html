@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Main Page</title>
+  <link rel="stylesheet" href="../css/Adminmain.css">
+</head>
+<body>
+  <div id="clock"></div> <!-- Add this line for displaying the clock -->
+
+  <!-- Dashboard Boxes -->
+  <div class="dashboard-container">
+    <div class="dashboard-box">
+      <h2>Total Managers</h2>
+      <p id="totalManagers">0</p>
+    </div>
+    <div class="dashboard-box">
+      <h2>Total Developers</h2>
+      <p id="totalDevelopers">0</p>
+    </div>
+    <div class="dashboard-box">
+      <h2>Total Projects</h2>
+      <p id="totalProjects">0</p>
+    </div>
+  </div>
+  
+  <h1>Welcome, <span id="username">username</span> to Admin Panel</h1>
+  
+  <button class="toggle-button" id="toggleButton">Menu -></button>
+  <button class="profile-button" id="profileButton">
+    <img src="../image/user-inverted.png" alt="user-inverted" style="width: 20px; height: 20px;">
+    <span id="usernameText">username</span>
+  </button>
+  
+  <div class="slide-in-menu" id="slideInMenu">
+    <button class="register-button" id="registerButton">User Registration</button>
+    <button class="mail-button" id="mailButton">
+      <img src="../image/image.png" alt="gmail" style="width: 15px; height: 10px;">
+      Send Mail
+    </button>
+    <button class="user-button" id="userbutton">User Profiles</button>
+    <button class="chat-button" id="chatButton">Chat </button>
+    <button class="report-button" id="reportButton">Report & Analytics </button>
+    <button class="sign-out-button" id="signOutButton">Sign Out</button>
+
+  </div>
+  
+  <script src=""></script>
+
+  <script type="module" src="../javascript/firebaseInt.js" defer></script>
+  <script type = "module" src="../javascript/Adminmain.js" defer></script>
+
+</body>
+</html>
+
+

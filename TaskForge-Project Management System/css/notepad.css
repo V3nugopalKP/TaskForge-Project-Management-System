@@ -1,0 +1,119 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Use Roboto as the primary font */
+    margin: 0;
+    padding: 0;
+    background-color: #fceae8; /* Very light coral background color */
+    color: #333; /* Darker text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.typing-animation {
+    font-family: 'Courier', monospace; /* Changed to Courier font */
+    font-size: 3em; /* Adjusted font size for typing animation */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #ff6347; /* Coral color for typing animation */
+    animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+.notepad-container {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 80%;
+}
+
+.notepad-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notepad {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffb347; /* Light orange background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    position: relative;
+}
+
+.notepad-heading {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+.notepad-content {
+    white-space: pre-wrap;
+    font-family: 'Courier', monospace;
+    font-size: 1em;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6347; /* Coral color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.delete-button:hover {
+    background-color: #ff4c2c; /* Darker coral on hover */
+}
+
+.login-button {
+    font-family: 'Roboto', Arial, sans-serif; /* Use Roboto for consistency */
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff6347; /* Coral color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: #ff4c2c; /* Darker coral on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #ff6347; } /* Coral color */
+}
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}

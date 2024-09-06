@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager edit Page</title>
+    <link rel="stylesheet" href="../css/managereditproject.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome, <span id="username"></span>!</h1>
+        <button id="signOutButton">Sign Out</button>
+    </div>
+    
+    <div class="content">
+        <h2>Your Projects</h2>
+        <div id="projectList">
+            <!-- Projects will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Edit Project Modal -->
+    <div id="editProjectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeEditModal">&times;</span>
+            <h2>Edit Project</h2>
+            <form id="editProjectForm">
+                <input type="hidden" id="projectId" name="projectId">
+                <div class="form-row">
+                    <label for="editTitle">Title:</label>
+                    <input type="text" id="editTitle" name="editTitle" required>
+                </div>
+                <div class="form-row">
+                    <label for="editDescription">Description:</label>
+                    <textarea id="editDescription" name="editDescription" required></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="editStartDate">Start Date:</label>
+                    <input type="date" id="editStartDate" name="editStartDate" required>
+                </div>
+                <div class="form-row">
+                    <label for="editEndDate">End Date:</label>
+                    <input type="date" id="editEndDate" name="editEndDate" required>
+                </div>
+                <div class="form-row">
+                    <label for="editLanguages">Languages Used:</label>
+                    <input type="text" id="editLanguages" name="editLanguages" required>
+                </div>
+                <div class="form-row">
+                    <label for="editTasks">Tasks:</label>
+                    <ul id="editTasks">
+                        <!-- Tasks will be dynamically added here -->
+                    </ul>
+                </div>
+                <div class="form-row">
+                    <button type="submit" id="updateProjectButton" class="submit_class">Update Project</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="../javascript/managereditproject.js" defer></script>
+</body>
+</html>
